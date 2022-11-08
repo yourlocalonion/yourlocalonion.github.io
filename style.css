@@ -5,5 +5,13 @@ body {
 
 p {
     font-family:'Montserrat', sans-serif;
-    padding-right: 10px;
+    
+}
+
+#main-title {
+    padding-left: 10%;
+}
+
+#emoji {
+    transform: rotate(45deg);
 }
