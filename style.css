@@ -10,10 +10,3 @@ p {
 #main-title {
     padding-left: 10%;
 }
-
-#emoji {
-    width: 30px;
-    height: 30px;
-    transform-origin: left;
-    transform: rotate(45deg);
-}
