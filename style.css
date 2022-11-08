@@ -1,12 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 body {
     background-color: #f7ef99;
 }
 
 p {
-    font-family:'Montserrat', sans-serif;  
+    font-family:'Ubuntu', sans-serif;  
 }
 
 #main-title {
-    padding-left: 10%;
+    padding-left: 0.3%;
+    padding-top: 0.5%;
+    text-align: center;
+}
+#emoji {
+    transform: rotate(-45deg);
+    margin: auto auto;
+    width: 50px;
+    transition: transform 1s;
+    transition-timing-function: ease-in-out;
+    offset-position: 1%;
+}
+
+#emoji:hover {
+    transform: rotate(45deg);
 }
