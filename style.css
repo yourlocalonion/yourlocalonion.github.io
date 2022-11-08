@@ -4,8 +4,7 @@ body {
 }
 
 p {
-    font-family:'Montserrat', sans-serif;
-    
+    font-family:'Montserrat', sans-serif;  
 }
 
 #main-title {
@@ -15,5 +14,6 @@ p {
 #emoji {
     width: 30px;
     height: 30px;
+    transform-origin: left;
     transform: rotate(45deg);
 }
