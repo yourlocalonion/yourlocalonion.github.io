@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
 body {
     background-color: #f7ef99;
 }
@@ -9,18 +9,27 @@ p {
 
 #main-title {
     padding-left: 0.3%;
-    padding-top: 0.5%;
+    padding-top: 2%;
     text-align: center;
 }
-#emoji {
-    transform: rotate(-45deg);
-    margin: auto auto;
-    width: 50px;
-    transition: transform 1s;
-    transition-timing-function: ease-in-out;
-    offset-position: 1%;
-}
 
-#emoji:hover {
-    transform: rotate(45deg);
+.button {
+    background-color: #413C58;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+#button_mainpage {
+    margin-top: 48%;
+    margin-right: 95%;
+}
+.button:hover {
+    background-color: #2c293b;
+    cursor: pointer;
 }
