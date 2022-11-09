@@ -28,6 +28,7 @@ p {
 #button_mainpage {
     margin-top: 48%;
     margin-right: 95%;
+    overflow: hidden;
 }
 .button:hover {
     background-color: #2c293b;
