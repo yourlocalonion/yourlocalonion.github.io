@@ -30,6 +30,15 @@ p {
     margin-right: 95%;
     overflow: hidden;
 }
+
+#button_mainpage-webkit-scrollbar {
+    display: none;
+}
+#button_mainpage {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}	
+
 .button:hover {
     background-color: #2c293b;
     cursor: pointer;
