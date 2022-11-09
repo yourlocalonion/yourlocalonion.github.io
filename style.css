@@ -31,7 +31,7 @@ p {
     overflow: hidden;
 }
 
-#button_mainpage-webkit-scrollbar {
+#button_mainpage::-webkit-scrollbar {
     display: none;
 }
 #button_mainpage {
