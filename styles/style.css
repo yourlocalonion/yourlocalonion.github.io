@@ -16,7 +16,7 @@ body {
 
 .text-poppins-faded {
     font-family: 'Poppins', sans-serif;
-    color: darkslategray;
+    color: rgba(0, 0, 0, 0.123);
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -35,13 +35,48 @@ body {
 hr {
     height: 2px;
     border-width: 0;
-    color: darkkhaki;
-    background-color: darkkhaki;
+    background-color: rgba(145, 125, 92, 0.486);
 }
 
-#title {
-    padding: 5px 0% 5px 0.5%;
+#title, #return {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    padding-left: 1%;
+    padding-right: 1%;
     color: rgb(196, 148, 59);
     background-color: rgb(230, 199, 106);
+    display: inline-block;
+    border-radius: 5px;
 }
 
+.list {
+    color: rgba(0, 0, 0);
+    background-color: rgb(230, 199, 106, 0.5);
+    padding: 0.5%;
+    border-radius: 10px;
+}
+
+.list-title {
+    font-family: 'Poppins', sans-serif;
+    margin: 0.5%;
+}
+
+.list-selement-title {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0.1%;
+    margin-left: 0.5%;
+    margin-bottom: 0.2%;
+}
+
+.list-element {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0.5%;
+    display: flex;
+}
+
+.no-margin {
+    font-family: 'Poppins', sans-serif;
+    margin: 0.2%;
+}
