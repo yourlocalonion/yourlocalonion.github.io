@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>YLO's Personal Webpage </title>
-        <meta property="og:title" content="yourlocalonion's website">
-        <meta property="og:description" content="github page for goofing around">
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="icon" type="image/x-icon" href="/images/icon.png">
-        <body>
-            <p id="title" class="text-poppins">YLO's Personal Webpage™</p>
-            <h3 class="no-margin">What is this?</h3>
-            <p class="no-margin">I usually use this to store files or do some tests.</p>
-            <hr>
-            <h3 class="text-poppins">Sub-pages</h3>
-            <div class="subpages">
-                <div id="rrs" class="list">
-                    <p class="list-title">Roblox-Related Stuff</p>
-                    <hr>
-                    <p class="list-selement-title">Wubby</p>
-                    <a href="https://wubbygame.com/" class="list-element">website link</a> 
-                    <a href="subpages/gwds.html" class="list-element">About GWDS</a>
-                </div>
-            </div>
-        </body>
+        <title>onion's page</title>
+        <meta property="og:title" content="onion's page">
+        <meta property="og:description" content="goof">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../assets/TwemojiOnion.svg" sizes="any" type="image/svg+xml">
+        <link rel="stylesheet" href="pages/styles/main.css">
     </head>
+    <body>
+        <h1 class="text" id="title" style="text-align: center; margin-bottom: 0%;">hi there</h1>
+        <h3 class="text" style="text-align: center; margin-top: 1%;">welcome to my (revamped) page</h3>
+        <div class="group">
+            <p class="group-title">Subpages</p>
+            <p class="text">nothing yet</p>
+        </div>
+        <div class="group">
+            <p class="group-title">Nerd Stuff</p>
+            <img src="https://github.com/yourlocalonion/yourlocalonion.github.io/actions/workflows/pages/pages-build-deployment/badge.svg">
+        </div>
+        <div id="footer">
+            <a class="footer-item" href="https://github.com/yourlocalonion/yourlocalonion.github.io" target="_blank">contribute</a>
+        </div>
+        <script>
+            let title = document.getElementById("title")
+            let possible = ["hi there", "howdy partner", "welcome aboard", "greetings - hl scientist", "the allionions shall rise once more..", "hi [insert game community here]!!", "404 not found", "error 502 bad gateway - wubbygame.com"]
+            var text = possible[Math.floor(Math.random()*possible.length)];
+
+            if (title) {
+                title.innerText = text
+            }
+        </script>
+    </body>
 </html>
