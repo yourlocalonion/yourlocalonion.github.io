@@ -53,6 +53,10 @@ hr {
     width: fit-content;
 }
 
+.group-member:hover {
+    background-color: rgb(49, 46, 37)
+}
+
 #wubwiretut {
     background-color: rgb(95, 88, 72);
     border-color: rgb(114, 105, 83);
@@ -65,10 +69,6 @@ hr {
 }
 
 #wubwiretut:hover {
-    background-color: rgb(49, 46, 37)
-}
-
-.group-member:hover {
     background-color: rgb(49, 46, 37)
 }
 
