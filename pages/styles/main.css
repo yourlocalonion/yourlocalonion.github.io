@@ -4,6 +4,7 @@
 
 .text, #footer, .inline, .group-title {
     font-family: 'Gabarito', cursive;
+    text-decoration: none;
 }   
 
 body {
@@ -39,6 +40,36 @@ hr {
     border-style: solid;
     border-color: rgb(114, 105, 83);
     margin-bottom: 5px;
+}
+
+.group-member {
+    background-color: rgb(95, 88, 72);
+    border-color: rgb(114, 105, 83);
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+#wubwiretut {
+    background-color: rgb(95, 88, 72);
+    border-color: rgb(114, 105, 83);
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+#wubwiretut:hover {
+    background-color: rgb(49, 46, 37)
+}
+
+.group-member:hover {
+    background-color: rgb(49, 46, 37)
 }
 
 .group-title {
