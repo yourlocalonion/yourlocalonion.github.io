@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap');
 
 :root {
     --ivory: #f6f7ebff;
@@ -6,16 +6,33 @@
     --onyx: #393e41ff;
     --steel-blue: #3f88c5ff;
     --keppel: #44bba4ff;
+
+    --bg-clr-light: var(--ivory);
+    --txt-clr-light: var(--onyx);
+
+    --bg-clr-light: var(--onyx);
+    --txt-clr-light: var(--ivory);
 }
 
 /*defaults*/
 
 body {
-    background-color: var(--ivory);
+    --txt-clr: var(--onyx);
+    --bg-clr: var(--ivory);
+    background-color: var(--bg-clr);
+    transition: background-color .2s ease-in-out;
 }
 
-.text, .title{
+body.dark {
+    --txt-clr: var(--ivory);
+    --bg-clr: var(--onyx);
+    background-color: var(--bg-clr);
+}
+
+.text, .title, .group-text{
     font-family: 'Red Hat Display', sans-serif;
+    color: var(--txt-clr);
+    transition: color .2s ease-in-out;
 }
 
 /*specifics*/
@@ -24,7 +41,6 @@ body {
     display: inline-block;
     margin: 20px;
     padding: 5px;
-    color: var(--onyx);
 }
 
 .topbar-button {
@@ -42,8 +58,35 @@ body {
     margin-right: 10px;
 }
 
+.group {
+    margin-left: 25px;
+    padding: 10px;
+    background-color: var(--txt-clr);
+    width: fit-content;
+    border-radius: 8px;
+    transition: background-color .2s ease-in-out
+}
+
+.group-text {
+    color: var(--steel-blue);
+    transition: color .2s ease-in-out;
+}
+
 #toggletheme {
     position: fixed;
     bottom: 0;
     right: 0;
+    margin: 10px;
+    vertical-align: middle;
+    padding: 4px 5px 1px 5px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    color: var(--txt-clr);
+    border-color: var(--txt-clr);
+    transition: color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+#mainpagepara {
+    margin-left: 25px;
 }
