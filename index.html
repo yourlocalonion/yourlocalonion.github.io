@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>YLO's Personal Webpage </title>
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="icon" type="image/x-icon" href="/images/icon.png">
-        <body>
-            <p id="title" class="text-poppins">YLO's Personal Webpage™</p>
-            <h3 class="text-poppins">What is this?</h3>
-            <p class="text-poppins">This Webpage is just a main page for my other sub-pages.</p>
-            <hr>
-            <h3 class="text-poppins">Sub-pages</h3>
-            <div class="construction">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="orange" class="bi bi-cone-striped" viewBox="0 0 16 16" style="display: inline-block;">
-                    <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z"/>
-                </svg>
-                <p class="text-poppins" style="display: inline-block; text-align: center;">Area under construction!</p>
-            </div>
-            <div class="subpages">
-
-            </div>
-        </body>
+        <title>onion's page</title>
+        <meta property="og:title" content="onion's page">
+        <meta property="og:description" content="goof">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../assets/TwemojiOnion.svg" sizes="any" type="image/svg+xml">
+        <link rel="stylesheet" href="pages/styles/main.css">
     </head>
+    <body>
+        <h1 class="text" id="title" style="text-align: center; margin-bottom: 0%;">hi there</h1>
+        <h3 class="text" style="text-align: center; margin-top: 1%;">welcome to my (revamped) page</h3>
+        <div class="group">
+            <p class="group-title">Subpages</p>
+            <div id="wubwiretut">
+                <a href="pages/wubcomponents.html" style="color: aliceblue;" class="text">Wubby Components Index™</a>
+            </div>
+        </div>
+        <div class="group">
+            <p class="group-title">Nerd Stuff</p>
+            <img alt="status" src="https://github.com/yourlocalonion/yourlocalonion.github.io/actions/workflows/pages/pages-build-deployment/badge.svg">
+        </div>
+        <div id="footer">
+            <a class="footer-item" href="https://github.com/yourlocalonion/yourlocalonion.github.io" target="_blank">contribute</a>
+        </div>
+        <script>
+            let title = document.getElementById("title")
+            let possible = ["hi there", "howdy partner", "welcome aboard", "greetings - hl scientist", "the allionions shall rise once more..", "hi [insert game community here]!!", "404 not found", "rip wubbygame.com rest in peace"]
+            var text = possible[Math.floor(Math.random()*possible.length)];
+
+            if (title) {
+                title.innerText = text
+            }
+        </script>
+    </body>
 </html>

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap');
+
+:root {
+    --ivory: #f6f7ebff;
+    --cinnabar: #e94f37ff;
+    --onyx: #393e41ff;
+    --steel-blue: #3f88c5ff;
+    --keppel: #44bba4ff;
+
+    --bg-clr-light: var(--ivory);
+    --txt-clr-light: var(--onyx);
+
+    --bg-clr-light: var(--onyx);
+    --txt-clr-light: var(--ivory);
+}
+
+/*defaults*/
+
+body {
+    --txt-clr: var(--onyx);
+    --bg-clr: var(--ivory);
+    background-color: var(--bg-clr);
+    transition: background-color .2s ease-in-out;
+}
+
+body.dark {
+    --txt-clr: var(--ivory);
+    --bg-clr: var(--onyx);
+    background-color: var(--bg-clr);
+}
+
+.text, .title, .group-text{
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--txt-clr);
+    transition: color .2s ease-in-out;
+}
+
+/*specifics*/
+
+.title {
+    display: inline-block;
+    margin: 20px;
+    padding: 5px;
+}
+
+.topbar-button {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    float: right;
+    margin: 20px 10px 10px 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--steel-blue);
+}
+
+.topbar {
+    margin-right: 10px;
+}
+
+.group {
+    margin-left: 25px;
+    padding: 10px;
+    background-color: var(--txt-clr);
+    width: fit-content;
+    border-radius: 8px;
+    transition: background-color .2s ease-in-out
+}
+
+.group-text {
+    color: var(--steel-blue);
+    transition: color .2s ease-in-out;
+}
+
+#toggletheme {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    vertical-align: middle;
+    padding: 4px 5px 1px 5px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    color: var(--txt-clr);
+    border-color: var(--txt-clr);
+    transition: color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+#mainpagepara {
+    margin-left: 25px;
+}

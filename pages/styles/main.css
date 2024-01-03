@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+/*defaults*/
+
+.text, #footer, .inline, .group-title {
+    font-family: 'Gabarito', cursive;
+    text-decoration: none;
+}   
+
+body {
+    background-color: rgb(255, 231, 178);
+}
+
+hr {
+    background-color: rgb(155, 143, 114);
+    height: 2px;
+    border-style: none;
+}
+
+/*specifics*/
+
+#footer {
+   position: fixed;
+   bottom: 0;
+   margin-bottom: 10px;
+   padding: 5px;
+   padding-left: 10px;
+}
+
+.footer-item {
+    color: black;
+}
+
+.group {
+    background-color: rgb(155, 143, 114);
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(114, 105, 83);
+    margin-bottom: 5px;
+}
+
+.group-member {
+    background-color: rgb(95, 88, 72);
+    border-color: rgb(114, 105, 83);
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.group-member:hover {
+    background-color: rgb(49, 46, 37)
+}
+
+#wubwiretut {
+    background-color: rgb(95, 88, 72);
+    border-color: rgb(114, 105, 83);
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+#wubwiretut:hover {
+    background-color: rgb(49, 46, 37)
+}
+
+.group-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
