@@ -10,26 +10,45 @@
     --bg-clr-light: var(--ivory);
     --txt-clr-light: var(--onyx);
 
-    --bg-clr-light: var(--onyx);
-    --txt-clr-light: var(--ivory);
+    --bg-clr-dark: var(--onyx);
+    --txt-clr-dark: var(--ivory);
 }
 
 /*defaults*/
+hr {
+    border-style: solid;
+    color: var(--txt-clr);
+    transition: color .2s ease-in-out;
+}
 
 body {
-    --txt-clr: var(--onyx);
-    --bg-clr: var(--ivory);
+    --txt-clr: var(--txt-clr-light);
+    --bg-clr: var(--bg-clr-light);
     background-color: var(--bg-clr);
     transition: background-color .2s ease-in-out;
 }
 
 body.dark {
-    --txt-clr: var(--ivory);
-    --bg-clr: var(--onyx);
+    --txt-clr: var(--txt-clr-dark);
+    --bg-clr: var(--bg-clr-dark);
     background-color: var(--bg-clr);
 }
 
-.text, .title, .group-text{
+img, svg {
+    max-width: 150px;
+    height: auto;
+}
+
+dl {
+    margin: 0px;
+}
+
+li {
+    font-weight: 800;
+}
+
+.text, .title, .group-text, .list-desc, .group-title, .group-title-section,
+.section-text {
     font-family: 'Red Hat Display', sans-serif;
     color: var(--txt-clr);
     transition: color .2s ease-in-out;
@@ -54,22 +73,63 @@ body.dark {
     color: var(--steel-blue);
 }
 
+.topbar-button-back {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    float: none;
+    margin: 20px 10px 10px 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--steel-blue);
+}
+
+  
 .topbar {
     margin-right: 10px;
 }
 
-.group {
+.group, .dis-group {
     margin-left: 25px;
+    margin-bottom: 25px;
     padding: 10px;
-    background-color: var(--txt-clr);
+    color: transparent;
+    border-color: var(--txt-clr);
     width: fit-content;
     border-radius: 8px;
-    transition: background-color .2s ease-in-out
+    border-style: solid;
+    transition: border-color .2s ease-in-out
+}
+
+.group:hover, .dis-group:hover {
+    border-color: var(--steel-blue);
 }
 
 .group-text {
-    color: var(--steel-blue);
+    color: var(--txt-clr);
     transition: color .2s ease-in-out;
+}
+
+.group-title {
+    margin: 5px;
+}
+
+.group-title-section { 
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.group-section {
+    margin-left: 10px;
+}
+
+.section-text {
+    margin: 2px 0px 2px 0px;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25px;
 }
 
 #toggletheme {
@@ -89,4 +149,12 @@ body.dark {
 
 #mainpagepara {
     margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*media queries*/
+@media only screen and (max-width: 600px) {
+    .topbar-button {
+        display: none;
+    }
 }

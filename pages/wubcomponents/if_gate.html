@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WCI</title>
+        <meta property="og:title" content="If gate">
+        <meta property="og:description" content="WCI Page.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../../assets/TwemojiOnion.svg" sizes="any" type="image/svg+xml">
+        <link rel="stylesheet" href="../styles/wci.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="topbar">
+            <h2 class="title">If Gate</h2>
+            <a href="../wubcomponents.html" class="topbar-button-back">Back</a>
+        </div>
+        <div class="dis-group">
+            <img src="../../assets/wci/png/if.png">
+        </div>
+        
+        <div class="info" style="display: flex;">
+            <div class="group">
+                <h2 class="group-title">Properties</h2>
+                <hr>
+                <ul>
+                    <li class="group-text">Check Type</li>
+                    <dl class="list-desc">How the value is compared | <span style="font-weight: 500;">Dropdown</span></dl>
+                    <li class="group-text">Keep Activation</li>
+                    <dl class="list-desc">Determines if the gate stops firing when the previous gate is deactivated | <span style="font-weight: 500;">Boolean</span></dl>
+                    <li class="group-text">Value</li>
+                    <dl class="list-desc">The value to compare the {INPUT} to | <span style="font-weight: 500;">Any</span></dl>
+                </ul>
+            </div>
+            <div class="group">
+                <h2 class="group-title">Properties info</h2>
+                <hr>
+                <h4 class="group-title-section">Check Type</h4>
+                <div class="group-section">
+                    <li class="group-text">EQUAL TO</li>
+                    <dl class="list-desc">Checks if {INPUT} = Value | <span style="font-weight: 500;">Any</span></dl>
+                    <li class="group-text">BIGGER THAN</li>
+                    <dl class="list-desc">Checks if {INPUT} > Value | <span style="font-weight: 500;">Number Only</span></dl>
+                    <li class="group-text">SMALLER THAN</li>
+                    <dl class="list-desc">Checks if {INPUT} < Value | <span style="font-weight: 500;">Number Only</span></dl>
+                    <li class="group-text">BIGGER OR EQUAL</li>
+                    <dl class="list-desc">Checks if {INPUT} >= Value | <span style="font-weight: 500;">Number Only</span></dl>
+                    <li class="group-text">SMALLER OR EQUAL</li>
+                    <dl class="list-desc">Checks if {INPUT} <= Value | <span style="font-weight: 500;">Number Only</span></dl>
+                    <li class="group-text">NOT EQUAL TO</li>
+                    <dl class="list-desc">Checks if {INPUT} =~ Value | <span style="font-weight: 500;">Any</span></dl>
+                    <li class="group-text">EQUAL TO</li>
+                    <dl class="list-desc">Checks if {INPUT} Contains Value | <span style="font-weight: 500;">Any</span> (More info)</dl>
+                    <li class="group-text">EQUAL TO</li>
+                    <dl class="list-desc">Checks if {INPUT} Doesnt contain Value | <span style="font-weight: 500;">Any</span> (More info)</dl>
+                </div>
+            </div>
+            <div class="group">
+                <h2 class="group-title">idk</h2>
+                <hr>
+                <p class="group-text">text text text text text</p>
+            </div>
+        </div>
+
+
+        <button onclick="toggletheme()" id="toggletheme"><span class="material-symbols-outlined" id="tt_icon">light_mode</span></button>
+        <script src="../wubcomponent.js"></script>
+    </body>
+</html>
